@@ -11,12 +11,12 @@ import CoreData
 
 class MapViewController: UIViewController, StoryboardInstantiable {
 
-    private let viewModel = MapViewModel()
-    private var fetchedResultsController: NSFetchedResultsController<MyLocation>!
-
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+
+    private let viewModel = MapViewModel()
+    private var fetchedResultsController: NSFetchedResultsController<MyLocation>!
 
     override func viewDidLoad() {
         super.viewDidLoad()

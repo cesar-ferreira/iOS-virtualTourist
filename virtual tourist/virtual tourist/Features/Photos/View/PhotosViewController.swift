@@ -11,17 +11,17 @@ import CoreData
 
 class PhotosViewController: UIViewController, StoryboardInstantiable {
 
-    var myLocation: MyLocation!
-
-    private let viewModel = PhotosViewModel()
-    private var fetchedResultsController: NSFetchedResultsController<MyPhoto>!
-
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    
+
+    var myLocation: MyLocation!
+
+    private let viewModel = PhotosViewModel()
+    private var fetchedResultsController: NSFetchedResultsController<MyPhoto>!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setup()
@@ -145,9 +145,11 @@ extension PhotosViewController: UICollectionViewDataSource {
 }
 
 extension PhotosViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {}
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let photoToDelete = fetchedResultsController.object(at: indexPath)
+        self.viewModel.deletePhoto(photoToDelete)
+    }
 }
-
 
 extension PhotosViewController: NSFetchedResultsControllerDelegate {
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
