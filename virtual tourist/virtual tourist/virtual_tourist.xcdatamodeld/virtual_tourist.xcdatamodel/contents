@@ -8,11 +8,12 @@
     </entity>
     <entity name="MyPhoto" representedClassName="MyPhoto" syncable="YES" codeGenerationType="class">
         <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="url" optional="YES" attributeType="String"/>
         <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MyLocation" inverseName="photos" inverseEntity="MyLocation"/>
     </entity>
     <elements>
         <element name="MyLocation" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="MyPhoto" positionX="-54" positionY="18" width="128" height="88"/>
+        <element name="MyPhoto" positionX="-54" positionY="18" width="128" height="103"/>
     </elements>
 </model>
