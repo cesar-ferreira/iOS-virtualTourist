@@ -3,18 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9B934958EE713A386791724D /* Pods_virtual_tourist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE9429196AAAA2029D50BE8 /* Pods_virtual_tourist.framework */; };
 		BF65F07C26462D3F007C21F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F07B26462D3F007C21F3 /* AppDelegate.swift */; };
 		BF65F07E26462D3F007C21F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F07D26462D3F007C21F3 /* SceneDelegate.swift */; };
-		BF65F08026462D3F007C21F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F07F26462D3F007C21F3 /* ViewController.swift */; };
-		BF65F08326462D3F007C21F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF65F08126462D3F007C21F3 /* Main.storyboard */; };
 		BF65F08626462D3F007C21F3 /* virtual_tourist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF65F08426462D3F007C21F3 /* virtual_tourist.xcdatamodeld */; };
 		BF65F08826462D43007C21F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF65F08726462D43007C21F3 /* Assets.xcassets */; };
 		BF65F08B26462D43007C21F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF65F08926462D43007C21F3 /* LaunchScreen.storyboard */; };
+		BF65F09E2646320A007C21F3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F09D2646320A007C21F3 /* MapViewController.swift */; };
+		BF65F0A22646321A007C21F3 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF65F0A12646321A007C21F3 /* MapViewController.storyboard */; };
+		BF65F0A9264634B9007C21F3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0A8264634B9007C21F3 /* NetworkManager.swift */; };
+		BF65F0AD264634DD007C21F3 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0AC264634DD007C21F3 /* ApiClient.swift */; };
+		BF65F0B0264637DF007C21F3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0AF264637DF007C21F3 /* MapViewModel.swift */; };
+		BF65F0B4264639CB007C21F3 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0B3264639CB007C21F3 /* StoryboardInstantiable.swift */; };
+		BF65F0BB26463A20007C21F3 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0BA26463A20007C21F3 /* PhotosViewController.swift */; };
+		BF65F0BF26463A28007C21F3 /* PhotosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF65F0BE26463A28007C21F3 /* PhotosViewController.storyboard */; };
+		BF65F0CE2646450C007C21F3 /* MyLocation+MKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0CD2646450C007C21F3 /* MyLocation+MKAnnotation.swift */; };
+		BF65F0DB2647451E007C21F3 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0D92647451E007C21F3 /* MyCollectionViewCell.swift */; };
+		BF65F0DC2647451E007C21F3 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF65F0DA2647451E007C21F3 /* MyCollectionViewCell.xib */; };
+		BF65F0E02647482B007C21F3 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0DF2647482B007C21F3 /* PhotosViewModel.swift */; };
+		BF65F0EB26476295007C21F3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0EA26476295007C21F3 /* Response.swift */; };
+		BF65F0EE264762D5007C21F3 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0ED264762D5007C21F3 /* Photos.swift */; };
+		BF65F0F326476329007C21F3 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0F226476329007C21F3 /* Photo.swift */; };
+		BF65F0F6264787E9007C21F3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F0F5264787E9007C21F3 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +38,26 @@
 		BF65F07826462D3F007C21F3 /* virtual tourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "virtual tourist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF65F07B26462D3F007C21F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF65F07D26462D3F007C21F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF65F07F26462D3F007C21F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF65F08226462D3F007C21F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF65F08526462D3F007C21F3 /* virtual_tourist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = virtual_tourist.xcdatamodel; sourceTree = "<group>"; };
 		BF65F08726462D43007C21F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF65F08A26462D43007C21F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF65F08C26462D43007C21F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF65F09D2646320A007C21F3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BF65F0A12646321A007C21F3 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		BF65F0A8264634B9007C21F3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BF65F0AC264634DD007C21F3 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		BF65F0AF264637DF007C21F3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		BF65F0B3264639CB007C21F3 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		BF65F0BA26463A20007C21F3 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		BF65F0BE26463A28007C21F3 /* PhotosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotosViewController.storyboard; sourceTree = "<group>"; };
+		BF65F0CD2646450C007C21F3 /* MyLocation+MKAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyLocation+MKAnnotation.swift"; sourceTree = "<group>"; };
+		BF65F0D92647451E007C21F3 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF65F0DA2647451E007C21F3 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		BF65F0DF2647482B007C21F3 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		BF65F0EA26476295007C21F3 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		BF65F0ED264762D5007C21F3 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		BF65F0F226476329007C21F3 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		BF65F0F5264787E9007C21F3 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +78,6 @@
 				8F7FB6C840BE1099C2A1BC15 /* Pods-virtual tourist.debug.xcconfig */,
 				7436E3F463CDD79D638D2570 /* Pods-virtual tourist.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,16 +110,126 @@
 		BF65F07A26462D3F007C21F3 /* virtual tourist */ = {
 			isa = PBXGroup;
 			children = (
+				BF65F0A5264632D5007C21F3 /* Core */,
+				BF65F09C264631D2007C21F3 /* Features */,
 				BF65F07B26462D3F007C21F3 /* AppDelegate.swift */,
 				BF65F07D26462D3F007C21F3 /* SceneDelegate.swift */,
-				BF65F07F26462D3F007C21F3 /* ViewController.swift */,
-				BF65F08126462D3F007C21F3 /* Main.storyboard */,
 				BF65F08726462D43007C21F3 /* Assets.xcassets */,
 				BF65F08926462D43007C21F3 /* LaunchScreen.storyboard */,
 				BF65F08C26462D43007C21F3 /* Info.plist */,
 				BF65F08426462D3F007C21F3 /* virtual_tourist.xcdatamodeld */,
 			);
 			path = "virtual tourist";
+			sourceTree = "<group>";
+		};
+		BF65F0992646319E007C21F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F09D2646320A007C21F3 /* MapViewController.swift */,
+				BF65F0A12646321A007C21F3 /* MapViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF65F09A264631BF007C21F3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0AF264637DF007C21F3 /* MapViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BF65F09B264631CC007C21F3 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F09A264631BF007C21F3 /* Presentation */,
+				BF65F0992646319E007C21F3 /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		BF65F09C264631D2007C21F3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0B7264639F7007C21F3 /* Photos */,
+				BF65F09B264631CC007C21F3 /* Map */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		BF65F0A5264632D5007C21F3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0B2264639BF007C21F3 /* Utils */,
+				BF65F0A7264632E2007C21F3 /* Network */,
+				BF65F0A6264632DC007C21F3 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BF65F0A6264632DC007C21F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0CD2646450C007C21F3 /* MyLocation+MKAnnotation.swift */,
+				BF65F0EA26476295007C21F3 /* Response.swift */,
+				BF65F0ED264762D5007C21F3 /* Photos.swift */,
+				BF65F0F226476329007C21F3 /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF65F0A7264632E2007C21F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0A8264634B9007C21F3 /* NetworkManager.swift */,
+				BF65F0AC264634DD007C21F3 /* ApiClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BF65F0B2264639BF007C21F3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0B3264639CB007C21F3 /* StoryboardInstantiable.swift */,
+				BF65F0F5264787E9007C21F3 /* ImageDownloader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BF65F0B7264639F7007C21F3 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0B926463A0A007C21F3 /* Presentation */,
+				BF65F0B826463A05007C21F3 /* View */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		BF65F0B826463A05007C21F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0D8264744F8007C21F3 /* Cell */,
+				BF65F0BA26463A20007C21F3 /* PhotosViewController.swift */,
+				BF65F0BE26463A28007C21F3 /* PhotosViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF65F0B926463A0A007C21F3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0DF2647482B007C21F3 /* PhotosViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BF65F0D8264744F8007C21F3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BF65F0D92647451E007C21F3 /* MyCollectionViewCell.swift */,
+				BF65F0DA2647451E007C21F3 /* MyCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +291,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF65F0DC2647451E007C21F3 /* MyCollectionViewCell.xib in Resources */,
+				BF65F0A22646321A007C21F3 /* MapViewController.storyboard in Resources */,
 				BF65F08B26462D43007C21F3 /* LaunchScreen.storyboard in Resources */,
+				BF65F0BF26463A28007C21F3 /* PhotosViewController.storyboard in Resources */,
 				BF65F08826462D43007C21F3 /* Assets.xcassets in Resources */,
-				BF65F08326462D3F007C21F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,24 +348,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF65F0DB2647451E007C21F3 /* MyCollectionViewCell.swift in Sources */,
+				BF65F0BB26463A20007C21F3 /* PhotosViewController.swift in Sources */,
+				BF65F0F6264787E9007C21F3 /* ImageDownloader.swift in Sources */,
+				BF65F0CE2646450C007C21F3 /* MyLocation+MKAnnotation.swift in Sources */,
 				BF65F08626462D3F007C21F3 /* virtual_tourist.xcdatamodeld in Sources */,
-				BF65F08026462D3F007C21F3 /* ViewController.swift in Sources */,
 				BF65F07C26462D3F007C21F3 /* AppDelegate.swift in Sources */,
+				BF65F0A9264634B9007C21F3 /* NetworkManager.swift in Sources */,
+				BF65F0EB26476295007C21F3 /* Response.swift in Sources */,
+				BF65F09E2646320A007C21F3 /* MapViewController.swift in Sources */,
+				BF65F0EE264762D5007C21F3 /* Photos.swift in Sources */,
+				BF65F0F326476329007C21F3 /* Photo.swift in Sources */,
+				BF65F0B0264637DF007C21F3 /* MapViewModel.swift in Sources */,
 				BF65F07E26462D3F007C21F3 /* SceneDelegate.swift in Sources */,
+				BF65F0E02647482B007C21F3 /* PhotosViewModel.swift in Sources */,
+				BF65F0B4264639CB007C21F3 /* StoryboardInstantiable.swift in Sources */,
+				BF65F0AD264634DD007C21F3 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF65F08126462D3F007C21F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF65F08226462D3F007C21F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF65F08926462D43007C21F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
